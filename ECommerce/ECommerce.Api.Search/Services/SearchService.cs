@@ -27,7 +27,9 @@ namespace ECommerce.Api.Search.Services
                 {
                     foreach (var item in order.Items)
                     {
-                        item.ProductName = productResult.Products.FirstOrDefault(p => p.Id == item.ProductId)?.Name;
+                        item.ProductName = productResult.IsSuccess ?
+                            productResult.Products.FirstOrDefault(p => p.Id == item.ProductId)?.Name :
+                            "Product information is not available";
                     }
                 }
                 var result = new
