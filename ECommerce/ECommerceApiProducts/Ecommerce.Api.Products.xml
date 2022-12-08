@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ecommerce.Api.Products</name>
+    </assembly>
+    <members>
+        <member name="M:Ecommerce.Api.Products.Controllers.ProductsController.GetProductsAsync">
+            <summary>
+            Gets all products in the database
+            </summary>
+            <returns>An IActionResult</returns>
+            <response code="200">Returns all products in the database</response>
+        </member>
+    </members>
+</doc>
